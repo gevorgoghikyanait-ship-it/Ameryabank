@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import Header from './components/Header/header';
 import './App.css';
@@ -12,3 +13,5 @@ function App() {
 }
 
 export default App;
+=======
+>>>>>>> c96da6ac5e9d96d06ce3101664374d5cb13fb6fe
