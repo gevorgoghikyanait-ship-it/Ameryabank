@@ -1,0 +1,87 @@
+.site-header {
+  width: 100%;
+  font-family: sans-serif;
+  border-bottom: 1px solid #eee;
+}
+
+/* Վերևի TopNav-ի ոճերը */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 40px;
+  background-color: #fff;
+  font-size: 13px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.top-nav-left a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.top-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.top-nav-right a {
+  text-decoration: none;
+  color: #666;
+}
+
+.lang-select {
+  border: none;
+  background: transparent;
+  color: #7ab800;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Հիմնական MainNav-ի ոճերը */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #fff;
+}
+
+.logo img {
+  height: 35px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.nav-menu a.active-link {
+  color: #7ab800;
+}
+
+.online-banking-btn {
+  background-color: #7ab800;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.online-banking-btn:hover {
+  background-color: #699e00;
+}
