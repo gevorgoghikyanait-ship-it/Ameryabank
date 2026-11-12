@@ -3,6 +3,7 @@ import Header from './components/Header/header';
 import ServicesSection from './components/ServicesSection';
 import EcosystemSection from './components/EcosystemSection';
 import OnlineActionsSection from './components/OnlineActionsSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <ServicesSection />
       <EcosystemSection />
       <OnlineActionsSection />
+      <Footer />
     </div>
   );
 }
