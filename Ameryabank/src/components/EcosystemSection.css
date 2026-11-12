@@ -1,0 +1,121 @@
+.ecosystem-section {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #f7f9fc;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans Armenian', sans-serif;
+}
+
+/* 3 սյունակով ցանց (Grid) */
+.ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Քարտի ընդհանուր տեսքը */
+.ecosystem-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid #eaeef4;
+}
+
+.ecosystem-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Վերևի նկարի հատված (սպիտակ/բաց ֆոնով) */
+.card-top-image {
+  background-color: #f3f5f8;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-bottom: 1px solid #edf1f7;
+}
+
+.card-top-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Ներքևի բովանդակություն */
+.card-bottom-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.card-description {
+  font-size: 15px;
+  color: #333333;
+  line-height: 1.5;
+  margin: 0 0 24px 0;
+  min-height: 46px; /* Հավասարեցնում է տեքստերի բարձրությունները */
+}
+
+/* Կոճակների բլոկ */
+.card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Կանաչ հիմնական կոճակ */
+.btn-primary-green {
+  background-color: #6bc43b;
+  color: #ffffff;
+  text-align: center;
+  padding: 13px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary-green:hover {
+  background-color: #5eb331;
+}
+
+/* Սպիտակ շրջանակով երկրորդական կոճակ */
+.btn-secondary-outline {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  text-align: center;
+  padding: 13px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid #dcdcdc;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-secondary-outline:hover {
+  border-color: #999999;
+  background-color: #fafafa;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1200px) {
+  .ecosystem-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .ecosystem-grid {
+    grid-template-columns: 1fr;
+  }
+}
