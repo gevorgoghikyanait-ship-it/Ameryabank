@@ -9,10 +9,10 @@
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1520px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 40px;
 }
 
 /* ================= HEADER STYLES ================= */
@@ -25,7 +25,6 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
 }
 
-/* Top Bar */
 .top-bar {
   border-bottom: 1px solid #f0f0f0;
   height: 40px;
@@ -110,7 +109,6 @@
   padding: 0;
 }
 
-/* Main Nav */
 .main-nav {
   height: 76px;
   display: flex;
@@ -160,7 +158,6 @@
   color: #6bc43b;
 }
 
-/* Ակտիվ «Թվային» բաժնի կանաչ տեքստը և աջ ուղղահայաց գիծը */
 .menu-link.active {
   color: #6bc43b;
   font-weight: 600;
@@ -178,7 +175,6 @@
   border-radius: 2px;
 }
 
-/* Օնլայն բանկինգ կոճակ */
 .online-banking-btn {
   background-color: #6bc43b;
   color: #ffffff;
@@ -191,7 +187,7 @@
   align-items: center;
   gap: 8px;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.15s ease;
+  transition: background-color 0.2s ease;
 }
 
 .online-banking-btn:hover {
@@ -202,7 +198,7 @@
 .hero-section {
   position: relative;
   width: 100%;
-  min-height: 540px;
+  min-height: 700px;
   background-color: #f3f5f8;
   display: flex;
   align-items: center;
@@ -213,24 +209,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
-  padding-top: 24px;
+  gap: 20px;
+  padding-top: 10px;
   padding-bottom: 0;
 }
 
 .hero-content {
-  flex: 1;
-  max-width: 560px;
+  flex: 0.75;
+  max-width: 480px;
   z-index: 2;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .hero-title {
-  font-size: 52px;
+  font-size: 50px;
   font-weight: 700;
   color: #111111;
   line-height: 1.15;
-  margin: 0 0 18px 0;
+  margin: 0 0 16px 0;
   letter-spacing: -0.5px;
 }
 
@@ -243,7 +239,7 @@
 }
 
 .hero-image-wrapper {
-  flex: 1.1;
+  flex: 1.8;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -251,14 +247,14 @@
 }
 
 .hero-image {
-  max-width: 650px;
-  width: 100%;
+  max-width: none;
+  width: 1150px;
   height: auto;
   object-fit: contain;
   display: block;
+  margin-right: -120px;
 }
 
-/* Ձախ «Ասա կարծիքդ» կոճակ */
 .feedback-tab {
   position: fixed;
   left: 0;
@@ -276,14 +272,8 @@
   cursor: pointer;
   z-index: 100;
   box-shadow: 0 4px 12px rgba(235, 120, 36, 0.25);
-  transition: background-color 0.2s ease;
 }
 
-.feedback-tab:hover {
-  background-color: #d66818;
-}
-
-/* Աջ ներքևի չաթի վիջեթ */
 .chat-widget {
   position: fixed;
   right: 28px;
@@ -318,69 +308,4 @@
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 4px 14px rgba(107, 196, 59, 0.4);
-  transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-.chat-button:hover {
-  transform: scale(1.06);
-  background-color: #5eb331;
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 1120px) {
-  .primary-menu {
-    gap: 16px;
-  }
-
-  .nav-left {
-    gap: 24px;
-  }
-
-  .hero-title {
-    font-size: 42px;
-  }
-}
-
-@media (max-width: 960px) {
-  .top-utils .util-item span {
-    display: none;
-  }
-
-  .primary-menu {
-    display: none;
-  }
-
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
-    padding-top: 48px;
-  }
-
-  .hero-content {
-    max-width: 100%;
-    padding-bottom: 16px;
-  }
-
-  .hero-image-wrapper {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 576px) {
-  .container {
-    padding: 0 16px;
-  }
-
-  .segment-nav {
-    gap: 12px;
-  }
-
-  .hero-title {
-    font-size: 32px;
-  }
-
-  .online-banking-btn {
-    padding: 8px 14px;
-    font-size: 13px;
-  }
 }
