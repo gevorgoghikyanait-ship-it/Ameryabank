@@ -1,0 +1,126 @@
+.offers {
+  background: #fff;
+  padding: 40px 16px;
+  font-family: "Noto Sans Armenian", "Segoe UI", Arial, sans-serif;
+}
+
+.offers__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.offers__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.offers__title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.offers__arrows {
+  display: flex;
+  gap: 8px;
+}
+
+.offers__arrow {
+  width: 40px;
+  height: 32px;
+  border: 0;
+  border-radius: 6px;
+  background: #fff;
+  color: #222;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.offers__arrow:disabled {
+  background: #f1f1f1;
+  color: #bbb;
+  cursor: default;
+  box-shadow: none;
+}
+
+/* Քարտերի շարք */
+.offers__track {
+  display: flex;
+  gap: 20px;
+  padding: 6px 4px 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.offers__track::-webkit-scrollbar {
+  display: none;
+}
+
+.offers__card {
+  flex: 0 0 232px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  scroll-snap-align: start;
+}
+
+.offers__img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #eef1f6;
+}
+
+.offers__name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 18px 0 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.offers__text {
+  margin: 0 0 20px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #444;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.offers__btn {
+  margin-top: auto;
+  padding: 10px 12px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  color: #222;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.offers__btn:hover {
+  border-color: #76c043;
+  color: #5fa832;
+}
+
+@media (max-width: 700px) {
+  .offers__title {
+    font-size: 22px;
+  }
+}

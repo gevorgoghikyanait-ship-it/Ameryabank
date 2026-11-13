@@ -5,6 +5,7 @@ import UsefulLinks from "./components/UsefulLinks/UsefulLinks";
 import BannerSlider from "./components/bannerSlider/BannerSlider";
 import FloatingWidgets from "./components/FloatingWidgets/floatingWidgets";
 import ProductShowcase from "./components/ProductShowcase/ProductShowcase";
+import Offers from "./components/Offers/Offers";
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
       <UsefulLinks />
       <BannerSlider />
       <FloatingWidgets />
-
-    <ProductShowcase />
+      <ProductShowcase />
+      <Offers />
 
     </>
   );
