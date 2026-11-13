@@ -1,0 +1,67 @@
+.useful {
+  background: #f5f7fb;
+  padding: 30px 15px 40px;
+  font-family: "Noto Sans Armenian", "Segoe UI", Arial, sans-serif;
+}
+
+.useful__title {
+  margin: 0 0 30px;
+  font-size: 40px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.useful__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px;
+}
+
+.useful__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  min-height: 164px;
+  padding: 24px 22px;
+  background: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #222;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.useful__card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.useful__icon {
+  color: #76c043;
+  line-height: 0;
+}
+
+.useful__name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 1100px) {
+  .useful__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .useful__title {
+    font-size: 28px;
+  }
+  .useful__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .useful__name {
+    font-size: 16px;
+  }
+}
