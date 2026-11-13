@@ -4,6 +4,7 @@ import PromoCards from "./components/PromoCards/promoCards";
 import UsefulLinks from "./components/UsefulLinks/UsefulLinks";
 import BannerSlider from "./components/bannerSlider/BannerSlider";
 import FloatingWidgets from "./components/FloatingWidgets/floatingWidgets";
+import ProductShowcase from "./components/ProductShowcase/ProductShowcase";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       <UsefulLinks />
       <BannerSlider />
       <FloatingWidgets />
+
+    <ProductShowcase />
+
     </>
   );
 }
