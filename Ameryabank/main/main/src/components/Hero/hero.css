@@ -1,0 +1,140 @@
+.hero {
+  position: relative;
+  height: 480px;
+  background: #f5f7fb;
+  overflow: hidden;
+  font-family: "Noto Sans Armenian", "Segoe UI", Arial, sans-serif;
+}
+
+.hero__slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+}
+
+.hero__slide--active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  padding: 0 30px;
+}
+
+.hero__title {
+  margin: 0 0 16px;
+  font-size: 56px;
+  line-height: 1.1;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.hero__text p {
+  margin: 0 0 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.hero__text .hero__bold {
+  font-weight: 700;
+  color: #222;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn--primary {
+  background: #76c043;
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: #5fa832;
+}
+
+.btn--outline {
+  background: #fff;
+  color: #222;
+  border: 1px solid #999;
+  font-weight: 400;
+}
+
+.btn--outline:hover {
+  border-color: #76c043;
+  color: #5fa832;
+}
+
+.hero__image {
+  position: absolute;
+  right: 6%;
+  bottom: 0;
+  height: 100%;
+  max-width: 55%;
+  object-fit: contain;
+  object-position: right bottom;
+}
+
+/* Dots */
+.hero__dots {
+  position: absolute;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 3;
+}
+
+.hero__dot {
+  width: 30px;
+  height: 5px;
+  border: 0;
+  padding: 0;
+  background: #bbb;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero__dot--active {
+  background: #76c043;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    height: 560px;
+  }
+  .hero__slide {
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+  .hero__title {
+    font-size: 36px;
+  }
+  .hero__image {
+    right: 0;
+    height: 55%;
+    max-width: 100%;
+  }
+}
