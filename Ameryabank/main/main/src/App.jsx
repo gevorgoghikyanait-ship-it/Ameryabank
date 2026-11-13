@@ -5,6 +5,7 @@ import UsefulLinks from "./components/UsefulLinks/UsefulLinks";
 import BannerSlider from "./components/bannerSlider/BannerSlider";
 import FloatingWidgets from "./components/FloatingWidgets/floatingWidgets";
 import ProductShowcase from "./components/ProductShowcase/ProductShowcase";
+import ExchangeRates from "./components/ExchangeRates/ExchangeRates";
 import Offers from "./components/Offers/Offers";
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       <FloatingWidgets />
       <ProductShowcase />
       <Offers />
-
+      <ExchangeRates/>
     </>
   );
 }
