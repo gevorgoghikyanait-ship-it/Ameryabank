@@ -6,6 +6,7 @@ import BannerSlider from "./components/bannerSlider/BannerSlider";
 import FloatingWidgets from "./components/FloatingWidgets/floatingWidgets";
 import ProductShowcase from "./components/ProductShowcase/ProductShowcase";
 import ExchangeRates from "./components/ExchangeRates/ExchangeRates";
+import News from "./components/News/News";
 import Offers from "./components/Offers/Offers";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <ProductShowcase />
       <Offers />
       <ExchangeRates/>
+      <News />
     </>
   );
 }

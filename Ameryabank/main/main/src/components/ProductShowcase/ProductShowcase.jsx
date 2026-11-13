@@ -9,7 +9,7 @@ const tabs = [
     subtitle: "Տուն գնելը երբեք այսքան հեշտ չի եղել",
     text: "Ընտրիր քո նոր բնակարանը, ստացիր վարկային հայտի պատասխանն օնլայն մի քանի րոպեում, այցելիր նոտարական գրասենյակ և ստորագրիր...",
     button: "Իմանալ ավելին",
-
+    bg:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNRIEVI1dIfU4mvZu5Z-_kxj4bElFYvjLVZR7sxhuKgQ&s=10"
   },
   {
     id: "car",
@@ -18,7 +18,7 @@ const tabs = [
     subtitle: "Ավտոմեքենա գնելը հիմա ավելի հարմար է",
     text: "Ընտրիր քո ավտոմեքենան և ստացիր վարկի պատասխանը օնլայն՝ առանց բանկ այցելելու։",
     button: "Իմանալ ավելին",
-
+    bg:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROezu7XwfJzcMMu1f3j_JkMPHeE9zl8gI6FS4tvSYkLQ&s=10'
   },
   {
     id: "invest",
@@ -27,7 +27,7 @@ const tabs = [
     subtitle: "Ներդրումներ՝ քո ֆինանսական նպատակների համար",
     text: "Սկսիր ներդրումները հարմար հավելվածով և հետևիր քո պորտֆելին ամեն օր։",
     button: "Իմանալ ավելին",
-
+    bg:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHE1TIbfdBPPHJpQvlA6XHrQ5GEuavswqqxMjqm8C3Ag&s=10",
   },
   {
     id: "business",
@@ -36,7 +36,7 @@ const tabs = [
     subtitle: "Լուծումներ քո բիզնեսի զարգացման համար",
     text: "Բացիր հաշիվ, կառավարիր վճարումները և ստացիր ֆինանսավորում օնլայն։",
     button: "Իմանալ ավելին",
-
+    bg:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0KvL3p9CORk_sqOMGPFX1UQsLqc4yZTqBiBJNo2TDDg&s=10"
   },
 ];
 
